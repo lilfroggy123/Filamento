@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f3e8ff;
+  background: #e0f7ff; /* sky blue */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,23 +13,23 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(128, 0, 128, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 128, 0.2); /* dark blue shadow */
   text-align: center;
-  border: 2px solid #d6b3ff;
+  border: 2px solid #b3e0ff; /* lighter sky blue border */
 }
 
 h1 {
   margin-bottom: 0.5rem;
-  color: #6a0dad;
+  color: #004080; /* dark blue */
 }
 
 p {
   margin-bottom: 1.5rem;
-  color: #5c2d91;
+  color: #005999; /* medium-dark blue */
 }
 
 .download-btn {
-  background: #a64dff;
+  background: #003366; /* dark blue */
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -41,5 +41,5 @@ p {
 }
 
 .download-btn:hover {
-  background: #7a1fff;
+  background: #002244; /* darker blue on hover */
 }
