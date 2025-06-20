@@ -1,3 +1,45 @@
+/* Rainbow animated background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff5f6d, #ffc371, #47e891, #24c6dc, #845ec2);
+  background-size: 1000% 1000%;
+  animation: rainbowBG 20s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes rainbowBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Centered container */
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 128, 0.2);
+  text-align: center;
+  border: 2px solid #b3e0ff;
+}
+
+/* Header + paragraph */
+h1 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #005999;
+}
+
+/* Rainbow animated glowing button */
 .download-btn {
   background: linear-gradient(270deg, #ff5f6d, #ffc371, #47e891, #24c6dc, #845ec2);
   background-size: 400% 400%;
@@ -10,6 +52,7 @@
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.3s ease;
+  text-shadow: 0 0 8px white, 0 0 12px #fff, 0 0 18px #ccc;
 }
 
 .download-btn:hover {
