@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filamento Download</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Load model-viewer for 3D T-Rex -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>Download Filamento Mod</h1>
     <p>Click the button below to download the LQ mod.</p>
     <a href="LQ mod.zip" download class="download-btn">Download</a>
+
+    <!-- Spinning 3D T-Rex -->
+    <model-viewer src="trex.glb"
+      alt="3D T-Rex"
+      auto-rotate
+      camera-controls
+      disable-zoom
+      style="width: 300px; height: 300px; margin-top: 2rem;">
+    </model-viewer>
   </div>
 </body>
 </html>
